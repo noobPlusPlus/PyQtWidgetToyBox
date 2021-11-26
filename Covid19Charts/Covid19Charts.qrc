@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Covid19Charts.qml</file>
+        <file>Covid19ChartsHttpRequest.js</file>
+        <file>charts.html</file>
+        <file>echarts.min.js</file>
+        <file>qwebchannel.js</file>
+    </qresource>
+</RCC>

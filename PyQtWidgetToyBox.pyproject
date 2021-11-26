@@ -1,3 +1,3 @@
 {
-    "files": ["mainwindow.py","TabBar/TabBar.py","TabPane/TabPane.py"]
+    "files": ["TabBar/TabBar.qrc","Covid19Charts/Covid19Charts.qrc","main.qml","Covid19Map/Covid19Map.qrc","MainWindow.py","main.py","TabPane/TabPane.qrc","Welcome/Welcome.qrc","Covid19GeneralView/Covid19GeneralView.qrc"]
 }

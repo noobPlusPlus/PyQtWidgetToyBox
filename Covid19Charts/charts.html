@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <!-- 引入刚刚下载的 ECharts 文件 -->
+  <script src="echarts.min.js"></script>
+  <script src="qwebchannel.js"></script>
+  <script>
+    var updateData = function (todayData, totalData, updateTime) {
+      let todayArrry = JSON.parse(todayData);
+      todayOption.dataset.source = todayArrry;
+      todayOption.legend.data = todayArrry[0];
+      todayOption.title.text = "全国疫情新增趋势(数据来源：网易，最后更新时间：" + updateTime + ")";
+      todayChart.setOption(todayOption);
+
+      let totalArrry = JSON.parse(totalData);
+      totalOption.dataset.source = totalArrry;
+      totalOption.legend.data = totalArrry[0];
+      totalOption.title.text = "全国累计/现有确诊趋势(数据来源：网易，最后更新时间：" + updateTime + ")";
+      totalChart.setOption(totalOption);
+    }
+
+    new QWebChannel(qt.webChannelTransport,
+      function (channel) {
+        var webObject = channel.objects.webObject;
+        window.foo = webObject;
+        webObject.setData.connect(updateData);
+      });
+
+  </script>
+</head>
+
+<body>
+  <div id="today" style="width: 1600px;height:500px;"></div>
+  <script type="text/javascript">
+    var todayChart = echarts.init(document.getElementById('today'));
+    todayOption = {
+      title: { x: 'center'},
+      legend: {
+        orient: 'vertical',
+        right: 10,
+        top: 'center'
+      },
+      tooltip: { trigger: 'axis' },
+      dataset: {
+      },
+      xAxis: { type: 'category' },
+      yAxis: {},
+      series: [
+        { type: 'line', smooth: true },
+        { type: 'line', smooth: true },
+        { type: 'line', smooth: true },
+      ]
+    };
+    todayChart.setOption(todayOption);
+  </script>
+  <div id="total" style="width: 1600px;height:500px;"></div>
+  <script type="text/javascript">
+    var totalChart = echarts.init(document.getElementById('total'));
+    totalOption = {
+      title: { x: 'center'},
+      legend: {
+        orient: 'vertical',
+        right: 10,
+        top: 'center'
+      },
+      tooltip: { trigger: 'axis' },
+      dataset: {
+      },
+      xAxis: { type: 'category' },
+      yAxis: {},
+      series: [
+        { type: 'line', smooth: true },
+        { type: 'line', smooth: true },
+      ]
+    };
+    totalChart.setOption(totalOption);
+  </script>
+</body>
+
+</html>

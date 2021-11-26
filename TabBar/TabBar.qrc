@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>TabBar.qml</file>
+    </qresource>
+</RCC>
