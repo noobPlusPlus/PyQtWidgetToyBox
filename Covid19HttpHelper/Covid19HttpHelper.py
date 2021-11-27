@@ -39,3 +39,32 @@ class Covid19HttpHelper(QtCore.QObject):
 
         updateTime = jsonObject["data"]["lastUpdateTime"]
         return [json.dumps(todayArray), json.dumps(totalArray), updateTime]
+
+    def getMapData(self):
+        r = requests.get(self.__url, headers=self.__header)
+        jsonObject = r.json()
+        msg = jsonObject["msg"]
+        if msg != "成功":
+            return ""
+
+        areaTree = jsonObject["data"]["areaTree"]
+        chinaDailyData = [];
+        for i in range(len(areaTree)):
+            countryObject = areaTree[i]
+            if countryObject["name"] != "中国":
+                continue
+            for j in range(len(countryObject["children"])):
+                provinceObject = countryObject["children"][j]
+                provinceTotal = provinceObject["total"]
+                province = {}
+                province["name"] = provinceObject["name"]
+                province["value"] = [provinceTotal["confirm"],
+                                provinceTotal["suspect"],
+                                provinceTotal["heal"],
+                                provinceTotal["dead"]]
+                chinaDailyData.append(province)
+
+        updateTime = jsonObject["data"]["lastUpdateTime"]
+
+        return [json.dumps(chinaDailyData), updateTime]
+
