@@ -5,7 +5,7 @@ from PyQt5.QtWebChannel import QWebChannel
 from PyQt5.QtCore import QUrl, QObject, pyqtSignal
 
 
-class ChartsWebClass(QObject):
+class MapWebClass(QObject):
     changeTab = pyqtSignal(int)
 
     def __init__(self, parent=None):
@@ -27,6 +27,6 @@ class Covid19Charts(QFrame):
         self.setLayout(layout)
 
         webChannel = QWebChannel(self)
-        webObject = ChartsWebClass(self)
+        webObject = MapWebClass(self)
         webChannel.registerObject("webObject", webObject)
         webView.page().setWebChannel(webChannel)
