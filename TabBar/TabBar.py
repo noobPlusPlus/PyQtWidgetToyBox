@@ -22,6 +22,7 @@ class TabBar(QFrame):
             mainVLayout.addWidget(button)
             self.buttonGroup.addButton(button, len(self.buttonGroup.buttons()))
 
+        mainVLayout.addStretch(1)
         self.setLayout(mainVLayout)
         self.buttonGroup.buttonClicked.connect(self.onButtonClicked)
         self.setStyleSheet(QSSReader("./TabBar/TabBar.css"))

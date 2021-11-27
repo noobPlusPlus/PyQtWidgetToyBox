@@ -51,7 +51,11 @@
     </widget>
    </item>
    <item>
-    <widget class="QTextEdit" name="textEdit"/>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="styleSheet">
+      <string notr="true">border:none;</string>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>

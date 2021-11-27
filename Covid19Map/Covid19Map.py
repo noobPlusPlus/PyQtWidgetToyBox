@@ -12,13 +12,13 @@ class MapWebClass(QObject):
         super().__init__(parent)
 
 
-class Covid19Charts(QFrame):
+class Covid19Map(QFrame):
     def __init__(self, parent=None):
         super().__init__(parent)
 
         webView = QWebEngineView(self)
         print(QApplication.applicationDirPath())
-        webView.load(QUrl.fromLocalFile("/Covid19Charts/charts.html"))
+        webView.load(QUrl.fromLocalFile("/Covid19Map/map.html"))
         webView.show()
 
         layout = QVBoxLayout()
