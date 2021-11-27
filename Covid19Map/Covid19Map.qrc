@@ -1,7 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>Covid19Map.qml</file>
-        <file>Covid19MapHttpRequest.js</file>
         <file>charts.html</file>
         <file>echarts.min.js</file>
         <file>qwebchannel.js</file>

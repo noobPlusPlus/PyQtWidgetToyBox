@@ -1,0 +1,15 @@
+.QPushButton
+{
+    background:red;
+    border:none;
+    background: "#FFFFFF";
+    font-family: "Microsoft YaHei";
+    font-size:16px;
+    color:black;
+    height: 40px;
+}
+
+.QPushButton:hover, .QPushButton:checked
+{
+    background: "#EFEFEF";
+}

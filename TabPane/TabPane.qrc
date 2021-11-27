@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>TabPane.qml</file>
-    </qresource>
-</RCC>
