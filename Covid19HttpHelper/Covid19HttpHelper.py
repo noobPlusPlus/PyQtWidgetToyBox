@@ -7,11 +7,10 @@ import json
 class Covid19HttpHelper(QtCore.QObject):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.__url = "http://c.m.163.com/ug/api/wuhan/app/data/list-total";
+        self.__url = "http://c.m.163.com/ug/api/wuhan/app/data/list-total"
         self.__header = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64)"}
 
     def getChartsData(self):
-        u = self.__url
         r = requests.get(self.__url, headers=self.__header)
         jsonObject = r.json()
         msg = jsonObject["msg"]
