@@ -31,12 +31,11 @@
      <property name="styleSheet">
       <string notr="true">.QPushButton
 {
-    background:red;
     border:none;
-    background: &quot;#FFFFFF&quot;;
+    color: darkgreen;
     font-family: &quot;Microsoft YaHei&quot;;
     font-size:12px;
-	color:black;
+	background:white;
 }
 
 .QPushButton:hover, .QPushButton:checked
