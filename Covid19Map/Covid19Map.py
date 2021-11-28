@@ -1,5 +1,5 @@
 ﻿# This Python file uses the following encoding: utf-8
-from PyQt5.QtWidgets import QFrame, QApplication, QVBoxLayout
+from PyQt5.QtWidgets import QFrame, QVBoxLayout
 from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtWebChannel import QWebChannel
 from PyQt5.QtCore import QUrl, QObject, pyqtSignal, QTimer
@@ -21,7 +21,6 @@ class Covid19Map(QFrame):
         super().__init__(parent)
 
         webView = QWebEngineView(self)
-        print(QApplication.applicationDirPath())
         webView.load(QUrl.fromLocalFile("/Covid19Map/map.html"))
         webView.show()
 

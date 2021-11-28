@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>Covid19GeneralView.qml</file>
-        <file>GeneralViewHttpRequest.js</file>
+        <file>Covid19GeneralView.css</file>
     </qresource>
 </RCC>

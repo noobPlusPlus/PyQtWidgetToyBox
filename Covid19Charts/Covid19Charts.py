@@ -1,5 +1,5 @@
 ﻿# This Python file uses the following encoding: utf-8
-from PyQt5.QtWidgets import QFrame, QApplication, QVBoxLayout
+from PyQt5.QtWidgets import QFrame, QVBoxLayout
 from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtWebChannel import QWebChannel
 from PyQt5.QtCore import QUrl, QObject, pyqtSignal, QTimer

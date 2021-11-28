@@ -1,3 +1,3 @@
 {
-    "files": ["TabBar/TabBar.qrc","TabPane/TabPane.py","Covid19Charts/Covid19Charts.py","Covid19Charts/Covid19Charts.qrc","TabBar/TabBar.py","Welcome/Welcome.ui","Covid19Map/Covid19Map.qrc","Welcome/Welcome.py","Covid19Map/Covid19Map.py","MainWindow.py","QSSReader/QSSReader.py","Covid19GeneralView/Covid19GeneralView.qrc","Covid19HttpHelper/Covid19HttpHelper.py"]
+    "files": ["TabBar/TabBar.qrc","TabPane/TabPane.py","Covid19Charts/Covid19Charts.py","Covid19Charts/Covid19Charts.qrc","TabBar/TabBar.py","Covid19HttpHelper/Covid19HttpHelper.py","Welcome/Welcome.ui","Covid19Map/Covid19Map.qrc","Welcome/Welcome.py","Covid19Map/Covid19Map.py","MainWindow.py","QSSReader/QSSReader.py","Covid19GeneralView/Covid19GeneralView.qrc","Covid19GeneralView/Covid19GeneralView.py"]
 }

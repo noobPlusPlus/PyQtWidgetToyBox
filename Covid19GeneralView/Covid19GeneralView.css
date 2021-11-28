@@ -1,0 +1,58 @@
+*{
+    font-family: "Microsoft YaHei";
+}
+
+.QLabel
+{
+    font-size: 20px;
+}
+
+.Covid19GeneralViewItem .QLabel#title
+{
+    font-weight: bold; 
+    color:black;
+}
+
+.Covid19GeneralViewItem .QLabel#increaseTitle
+{
+    color:"#9999A6";
+}
+
+.Covid19GeneralViewItem#input .QLabel[labelType = 'total'], .Covid19GeneralViewItem#input .QLabel[labelType = 'increase']
+{
+    color:"#FFA352";
+}
+
+.Covid19GeneralViewItem#noSymptom .QLabel[labelType = 'total'], .Covid19GeneralViewItem#noSymptom .QLabel[labelType = 'increase']
+{
+    color:"#791618";
+}
+
+.Covid19GeneralViewItem#storeConfirm .QLabel[labelType = 'total'], .Covid19GeneralViewItem#storeConfirm .QLabel[labelType = 'increase']
+{
+    color:"#E44A3D";
+}
+
+.Covid19GeneralViewItem#totalConfirm .QLabel[labelType = 'total'], .Covid19GeneralViewItem#totalConfirm .QLabel[labelType = 'increase']
+{
+    color:"#A31D13";
+}
+
+.Covid19GeneralViewItem#totalDead .QLabel[labelType = 'total'], .Covid19GeneralViewItem#totalDead .QLabel[labelType = 'increase']
+{
+    color:"#333333";
+}
+
+.Covid19GeneralViewItem#totalHeal .QLabel[labelType = 'total'], .Covid19GeneralViewItem#totalHeal .QLabel[labelType = 'increase']
+{
+    color:"#34AA70";
+}
+
+.Covid19GeneralViewItem .QLabel[labelType = 'total']
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+

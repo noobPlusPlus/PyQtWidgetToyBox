@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QFrame, QStackedLayout
 from Welcome.Welcome import Welcome
 from Covid19Charts.Covid19Charts import Covid19Charts
 from Covid19Map.Covid19Map import Covid19Map
+from Covid19GeneralView.Covid19GeneralView import Covid19GeneralView
 
 
 class TabPane(QFrame):
@@ -27,3 +28,5 @@ class TabPane(QFrame):
             return Covid19Charts(self)
         elif name == 'Covid19Map':
             return Covid19Map(self)
+        elif name == 'Covid19GeneralView':
+            return Covid19GeneralView(self)

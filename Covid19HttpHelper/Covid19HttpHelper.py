@@ -48,7 +48,7 @@ class Covid19HttpHelper(QtCore.QObject):
             return ""
 
         areaTree = jsonObject["data"]["areaTree"]
-        chinaDailyData = [];
+        chinaDailyData = []
         for i in range(len(areaTree)):
             countryObject = areaTree[i]
             if countryObject["name"] != "中国":
@@ -65,6 +65,40 @@ class Covid19HttpHelper(QtCore.QObject):
                 chinaDailyData.append(province)
 
         updateTime = jsonObject["data"]["lastUpdateTime"]
-
         return [json.dumps(chinaDailyData), updateTime]
 
+    def getGeneralView(self):
+        r = requests.get(self.__url, headers=self.__header)
+        jsonObject = r.json()
+        msg = jsonObject["msg"]
+        if msg != "成功":
+            return ""
+
+        generalViewDatas = []
+        totalObject = jsonObject["data"]["chinaTotal"]["total"]
+        todayObject = jsonObject["data"]["chinaTotal"]["today"]
+
+        inputData = (totalObject["input"], todayObject["input"])
+        generalViewDatas.append(inputData)
+
+        extDataObject = jsonObject["data"]["chinaTotal"]["extData"]
+        noSymptomData = (extDataObject["noSymptom"], extDataObject["incrNoSymptom"])
+        generalViewDatas.append(noSymptomData)
+
+        totalConfirm = totalObject["confirm"]
+        confirmData = (totalConfirm, todayObject["confirm"])  
+
+        totalDead = totalObject["dead"]
+        deadData = (totalDead, todayObject["dead"])
+
+        totalHeal = totalObject["heal"]
+        healData = (totalHeal, todayObject["heal"])
+
+        storeConfirm = totalConfirm - totalDead - totalHeal;
+        storeConfirmData = (storeConfirm, todayObject["storeConfirm"])
+        generalViewDatas.append(storeConfirmData)
+        generalViewDatas.append(confirmData)
+        generalViewDatas.append(deadData)
+        generalViewDatas.append(healData)
+
+        return generalViewDatas
