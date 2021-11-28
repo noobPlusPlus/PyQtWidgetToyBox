@@ -30,14 +30,14 @@ class Covid19GeneralViewItem(QFrame):
         mainVLayout = QVBoxLayout()
         mainVLayout.setContentsMargins(0, 0, 0, 0)
         mainVLayout.setSpacing(6)
-        mainVLayout.addWidget(titleLabel, 0, alignment = Qt.AlignHCenter)
-        mainVLayout.addWidget(self.__totalLabel, 0, alignment = Qt.AlignHCenter)
+        mainVLayout.addWidget(titleLabel, 0, alignment=Qt.AlignHCenter)
+        mainVLayout.addWidget(self.__totalLabel, 0, alignment=Qt.AlignHCenter)
         mainVLayout.addLayout(increaseHLayout)
 
         self.setLayout(mainVLayout)
 
     def setData(self, total, increase):
-        self.__totalLabel.setText(str(total))      
+        self.__totalLabel.setText(str(total))
         increaseString = ("+" if increase >= 0 else "") + str(increase)
         self.__increaseLabel.setText(increaseString)
 
@@ -51,14 +51,14 @@ class Covid19GeneralView(QFrame):
                         ("现有确诊", "storeConfirm"),
                         ("累计确诊", "totalConfirm"),
                         ("累计死亡", "totalDead"),
-                        ("累计治愈", "totalHeal"),]
+                        ("累计治愈", "totalHeal")]
 
         mainGridLayout = QGridLayout()
         mainGridLayout.setContentsMargins(0, 0, 0, 0)
         mainGridLayout.setHorizontalSpacing(20)
         mainGridLayout.setVerticalSpacing(20)
         for i in range(len(itemInfoList)):
-            itemInfo = itemInfoList[i];
+            itemInfo = itemInfoList[i]
             item = Covid19GeneralViewItem(itemInfo[0], self)
             item.setObjectName(itemInfo[1])
             self.__itemList.append(item)
@@ -70,7 +70,7 @@ class Covid19GeneralView(QFrame):
         mainHLayout = QHBoxLayout()
         mainHLayout.setContentsMargins(0, 0, 0, 0)
         mainHLayout.addStretch(1)
-        mainHLayout.addWidget(centerFrame, 0, alignment = Qt.AlignCenter)
+        mainHLayout.addWidget(centerFrame, 0, alignment=Qt.AlignCenter)
         mainHLayout.addStretch(1)
         self.setLayout(mainHLayout)
         self.setStyleSheet(QSSReader("./Covid19GeneralView/Covid19GeneralView.css"))
@@ -80,7 +80,7 @@ class Covid19GeneralView(QFrame):
         h = Covid19HttpHelper(self)
         datas = h.getGeneralView()
         if len(datas) == 0:
-            return;
+            return
 
         for i in range(len(datas)):
-            self.__itemList[i].setData(datas[i][0], datas[i][1]);
+            self.__itemList[i].setData(datas[i][0], datas[i][1])

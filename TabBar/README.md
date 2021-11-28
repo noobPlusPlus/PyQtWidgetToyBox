@@ -1,13 +1,9 @@
 ## TabBar
 
 **练习：**
-+ ListView
-+ ScrollBar
-+ model
-+ delegate
-+ MouseArea实现Hover/Select效果
 + 自定义信号
++ QButtonGroup
 
 
 **问题：**
-+ 
+- [ ] 暂未添加滚动条

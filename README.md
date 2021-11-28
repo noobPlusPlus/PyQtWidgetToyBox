@@ -1,14 +1,12 @@
 # PySideToyBox
 
 #### 介绍
-c++/QWidget菜鸟学习PySide/QML写的小玩具。
+c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
 主要技术：
 
-+ QML
-+ js
-+ QWebEngine
 + python
++ QWebEngine
 + echarts
 
 数据来源(仅学习使用，侵删)
@@ -23,46 +21,51 @@ c++/QWidget菜鸟学习PySide/QML写的小玩具。
 
     **练习：**
     + Qt5.14起多个控件支持Markdown
-    + XMLHttpRequest读取本地文件（未来会废弃）  
+    + desiner基本使用和修改样式
+    + 通过loadUi加载ui文件
+    + 读取文件
+
 
     **问题：**
-    - [ ] error: XMLHttpRequest: Using GET on a local file is dangerous and will be disabled by default in a future Qt version
-    - [x] ScrollView+TextArea 启动后没有滚动条，只有点击最大化后才会有。感觉是高度的问题。 最后参考[github](https://github.com/zhengtianzuo/QtQuickExamples/tree/master/QmlTextEditScrollBar)换成了TextEdit
+    - [ ] 滚动条未写样式
+    - [ ] 字体太小
 
 2. covid 19国内数据总览[Covid19GeneralView](Covid19GeneralView/README.md) 
 
     **练习：**
 
     + 布局
-    + Repeater
-    + js相关
+    + 样式表
+    + requests数据请求
+    + json文件解析
+    + python导入自定义模块
 
     **问题：**
-    - [ ] 各列居中效果不一致
+    + 暂无
 
 3. [TabBar](TabBar/README.md) 
 
     **练习：**
-    + ListView/model/delegate/ScrollBar
-    + MouseArea实现Hover/Select效果
     + 自定义信号
+    + QButtonGroup
     
     **问题：**
-    + 暂无
+    - [ ] 暂未添加滚动条
 
 4. [TabPane](TabPane/README.md) 
 
     **练习：**
-    + Loader动态加载换页
+    + QStackedLayout
+    + 简单工厂模式
     
     **问题：**
-    + 暂无
+    - [ ] 未能通过反射实现简单工厂模式，需要大量的if-else
 
 5. covid 19 普通图表[Covid19GeneralView](Covid19Charts/README.md)
 
     **练习：**
-    + QML版 WebEngineView
-    + QML版 WebChannel
+    + QWidget版 WebEngineView
+    + QWidget版 WebChannel
     + echarts普通图表
     + echarts dataset
 
@@ -71,8 +74,8 @@ c++/QWidget菜鸟学习PySide/QML写的小玩具。
 
 6. covid 19 地图图表[Covid19Map](Covid19Map/README.md)
     **练习：**
-    + QML版 WebEngineView
-    + QML版 WebChannel
+    + QWidget版 WebEngineView
+    + QWidget版 WebChannel
     + echarts地图图表（参考[gitee-LS1211]("https://gitee.com/LS1211/map-echarts")）
 
     **问题：**

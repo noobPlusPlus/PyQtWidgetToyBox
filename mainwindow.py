@@ -27,7 +27,7 @@ class MainWindow(QMainWindow):
 
         centralWidget = QFrame(self)
         centralWidget.setLayout(mainHLayout)
-        self.setCentralWidget(centralWidget);
+        self.setCentralWidget(centralWidget)
         self.tabBar.changeTab.connect(self.tabPane.setCurrentIndex)
         self.setStyleSheet("background:white")
         self.setMinimumSize(1440, 900)

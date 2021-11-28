@@ -86,7 +86,7 @@ class Covid19HttpHelper(QtCore.QObject):
         generalViewDatas.append(noSymptomData)
 
         totalConfirm = totalObject["confirm"]
-        confirmData = (totalConfirm, todayObject["confirm"])  
+        confirmData = (totalConfirm, todayObject["confirm"])
 
         totalDead = totalObject["dead"]
         deadData = (totalDead, todayObject["dead"])
@@ -94,7 +94,7 @@ class Covid19HttpHelper(QtCore.QObject):
         totalHeal = totalObject["heal"]
         healData = (totalHeal, todayObject["heal"])
 
-        storeConfirm = totalConfirm - totalDead - totalHeal;
+        storeConfirm = totalConfirm - totalDead - totalHeal
         storeConfirmData = (storeConfirm, todayObject["storeConfirm"])
         generalViewDatas.append(storeConfirmData)
         generalViewDatas.append(confirmData)
