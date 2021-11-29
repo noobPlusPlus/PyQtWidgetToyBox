@@ -6,4 +6,4 @@
 
 **问题：**
 
-+ 
+- [ ] js: Uncaught TypeError: Bind must be called on a function

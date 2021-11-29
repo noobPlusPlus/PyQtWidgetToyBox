@@ -25,7 +25,6 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     + 通过loadUi加载ui文件
     + 读取文件
 
-
     **问题：**
     - [ ] 滚动条未写样式
     - [ ] 字体太小
@@ -57,9 +56,10 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     **练习：**
     + QStackedLayout
     + 简单工厂模式
-    
+    + python类反射
+
     **问题：**
-    - [ ] 未能通过反射实现简单工厂模式，需要大量的if-else
+    - [x] 未能通过反射实现简单工厂模式，需要大量的if-else，已解决
 
 5. covid 19 普通图表[Covid19GeneralView](Covid19Charts/README.md)
 
@@ -68,9 +68,10 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     + QWidget版 WebChannel
     + echarts普通图表
     + echarts dataset
+    + 自定义信号槽@pyqtSlot()
 
     **问题：**
-    + 暂无
+    - [ ] js: Uncaught TypeError: Bind must be called on a function
 
 6. covid 19 地图图表[Covid19Map](Covid19Map/README.md)
     **练习：**
@@ -79,4 +80,4 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     + echarts地图图表（参考[gitee-LS1211]("https://gitee.com/LS1211/map-echarts")）
 
     **问题：**
-    + 暂无
+    - [ ] js: Uncaught TypeError: Bind must be called on a function
