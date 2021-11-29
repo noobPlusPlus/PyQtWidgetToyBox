@@ -1,5 +1,6 @@
 ﻿# This Python file uses the following encoding: utf-8
 import sys
+from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFrame, QHBoxLayout
 from TabBar.TabBar import TabBar
 from TabPane.TabPane import TabPane
