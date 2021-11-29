@@ -1,8 +1,8 @@
 ﻿# This Python file uses the following encoding: utf-8
 from PyQt5.QtWidgets import QFrame, QVBoxLayout
-from PyQt5.QtWebEngineWidgets import QWebEngineView
+from PyQt5.QtWebEngineWidgets import QWebEngineView, QWebEngineProfile, QWebEngineSettings
 from PyQt5.QtWebChannel import QWebChannel
-from PyQt5.QtCore import QUrl, QObject, pyqtSignal, QTimer
+from PyQt5.QtCore import QUrl, QObject, pyqtSignal, pyqtSlot, QTimer
 from Covid19HttpHelper.Covid19HttpHelper import Covid19HttpHelper
 
 
@@ -15,12 +15,23 @@ class MapWebClass(QObject):
     def setDatas(self, datas):
         self.setData.emit(datas[0], datas[1])
 
+    @pyqtSlot()
+    def pageLoadFinished(self):
+        h = Covid19HttpHelper(self)
+        datas = h.getMapData()
+        self.setDatas(datas)
+
 
 class Covid19Map(QFrame):
     def __init__(self, parent=None):
         super().__init__(parent)
 
         webView = QWebEngineView(self)
+        settings = webView.settings()
+        settings.setAttribute(QWebEngineSettings.LocalStorageEnabled, False)
+        engineProfile = webView.page().profile()
+        engineProfile.clearHttpCache()
+
         webView.load(QUrl.fromLocalFile("/Covid19Map/map.html"))
         webView.show()
 
@@ -33,10 +44,3 @@ class Covid19Map(QFrame):
         self.__webObject = MapWebClass(self)
         webChannel.registerObject("webObject", self.__webObject)
         webView.page().setWebChannel(webChannel)
-
-        QTimer.singleShot(1000, self.__requestData)
-
-    def __requestData(self):
-        h = Covid19HttpHelper(self)
-        datas = h.getMapData()
-        self.__webObject.setDatas(datas)

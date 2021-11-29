@@ -21,6 +21,11 @@ class TabPane(QFrame):
         self.mainStackedLayout.setCurrentIndex(index)
 
     def __pageFactory(self, name):
+#        page = __import__(name + "." + name, fromlist=[name])
+#        # 实例化，获取方法
+#        pageClass = getattr(page, name)
+#        return pageClass(self)
+
         # python 反射不会用
         if name == 'Welcome':
             return Welcome(self)

@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8" />
   <title></title>
-  <!-- 引入刚刚下载的 ECharts 文件 -->
   <script src="echarts.min.js"></script>
   <script src="qwebchannel.js"></script>
   <script>
@@ -25,10 +24,10 @@
     new QWebChannel(qt.webChannelTransport,
       function (channel) {
         var webObject = channel.objects.webObject;
-        window.foo = webObject;
-        webObject.setData.connect(updateData);
+        window.webObject = webObject;
+        window.webObject.setData.connect(updateData);
+        window.webObject.pageLoadFinished();
       });
-
   </script>
 </head>
 
@@ -37,7 +36,7 @@
   <script type="text/javascript">
     var todayChart = echarts.init(document.getElementById('today'));
     todayOption = {
-      title: { x: 'center'},
+      title: { x: 'center' },
       legend: {
         orient: 'vertical',
         right: 10,
@@ -60,7 +59,7 @@
   <script type="text/javascript">
     var totalChart = echarts.init(document.getElementById('total'));
     totalOption = {
-      title: { x: 'center'},
+      title: { x: 'center' },
       legend: {
         orient: 'vertical',
         right: 10,
@@ -77,6 +76,11 @@
       ]
     };
     totalChart.setOption(totalOption);
+
+    window.onresize = function () {
+      totalChart.resize();
+      todayChart.resize();
+    };
   </script>
 </body>
 
