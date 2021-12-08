@@ -183,7 +183,8 @@ class Mouse(QtWidgets.QGraphicsItem):
         dx = math.sin(self.angle) * 10
         self.mouseEyeDirection = [dx / 5, 0.0][QtCore.qAbs(dx / 5) < 1]
 
-        self.setTransform(QtGui.QTransform().rotate(dx))
+        #self.setTransform(QtGui.QTransform().rotate(dx))
+        self.setRotation(self.rotation() + dx)
         self.setPos(self.mapToParent(0, -(3 + math.sin(self.speed) * 3)))
 
 
@@ -208,7 +209,7 @@ class CollidingMice(QFrame):
         view.setViewportUpdateMode(QtWidgets.QGraphicsView.BoundingRectViewportUpdate)
         view.setDragMode(QtWidgets.QGraphicsView.ScrollHandDrag)
         view.setWindowTitle("Colliding Mice")
-        view.resize(400, 300)
+        #view.resize(400, 300)
 
         mainVLayout = QVBoxLayout()
         mainVLayout.setContentsMargins(0, 0, 0, 0)
