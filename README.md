@@ -17,13 +17,14 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
 ## 目录
 
-1. 欢迎(Welcome)
+1. 欢迎(Welcome)/春节倒计时
 
     **练习：**
     + Qt5.14起多个控件支持Markdown
-    + desiner基本使用和修改样式
     + 通过loadUi加载ui文件
     + 读取文件
+    + desiner基本使用和修改样式
+    + 控件进入/退出动画(QPropertyAnimation)
 
     **问题：**
     - [ ] 滚动条未写样式

@@ -27,29 +27,6 @@
     <number>10</number>
    </property>
    <item>
-    <widget class="QPushButton" name="pushButton">
-     <property name="styleSheet">
-      <string notr="true">.QPushButton
-{
-    border:none;
-    color: darkgreen;
-    font-family: &quot;Microsoft YaHei&quot;;
-    font-size:12px;
-	background:white;
-}
-
-.QPushButton:hover, .QPushButton:checked
-{
-    background: &quot;#EFEFEF&quot;;
-	font-size:16px;
-}</string>
-     </property>
-     <property name="text">
-      <string>designer打开 Welcome/Welcome.ui，在本按钮上右键-改变样式表，可以自定义样式</string>
-     </property>
-    </widget>
-   </item>
-   <item>
     <widget class="QTextEdit" name="textEdit">
      <property name="styleSheet">
       <string notr="true">border:none;</string>
