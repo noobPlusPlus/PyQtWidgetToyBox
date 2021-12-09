@@ -81,3 +81,16 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
     **问题：**
     - [ ] js: Uncaught TypeError: Bind must be called on a function
+
+7. 碰撞老鼠(PySide2 示例)[CollidingMice](CollidingMice/CollidingMice.py)
+    **练习：**
+    + 图形视图框架、场景、视图、自定义图形项、坐标系统
+    + 动画、碰撞检测
+    + QPainter绘图
+
+    **问题：**
+    - [x] 老鼠很短时间就会移出屏幕。已解决，根据C++版本修改`Rotation`相关处理
+    
+    - [x] 代码中使用太多定时器。已解决，封装独立控件，统一调用`advance()`
+    
+      > Doing the animation with a single timer connection to advance the scene ensures that all the mice are moved at one point and, more importantly, only one update is sent to the screen after all the mice have moved.

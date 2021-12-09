@@ -74,9 +74,9 @@ class Mouse(QtWidgets.QGraphicsItem):
         # QObject in order to receive timer events. PySide2 does not support
         # deriving from more than one wrapped class so we just create an
         # explicit timer instead.
-        self.timer = QtCore.QTimer()
-        self.timer.timeout.connect(self.timerEvent)
-        self.timer.start(1000 / 33)
+        # self.timer = QtCore.QTimer()
+        # self.timer.timeout.connect(self.timerEvent)
+        # self.timer.start(1000 / 33)
 
     @staticmethod
     def normalizeAngle(angle):
@@ -129,7 +129,9 @@ class Mouse(QtWidgets.QGraphicsItem):
         painter.setBrush(QtCore.Qt.NoBrush)
         painter.drawPath(path)
 
-    def timerEvent(self):
+    def advance(self, step):
+        if step == 0:
+            return
         # Don't move too far away.
         lineToCenter = QtCore.QLineF(QtCore.QPointF(0, 0), self.mapFromScene(0, 0))
         if lineToCenter.length() > 150:
@@ -215,4 +217,8 @@ class CollidingMice(QFrame):
         mainVLayout.setContentsMargins(0, 0, 0, 0)
         mainVLayout.addWidget(view)
         self.setLayout(mainVLayout)
+
+        self.timer = QtCore.QTimer()
+        self.timer.timeout.connect(scene.advance)
+        self.timer.start(1000 / 33)
 

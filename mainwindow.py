@@ -14,7 +14,7 @@ class MainWindow(QMainWindow):
             ("Covid19 概览", "Covid19GeneralView"),
             ("Covid19 图表", "Covid19Charts"),
             ("Covid19 地图", "Covid19Map"),
-            ("碰撞老鼠(PySide2 示例)", "CollidingMice"),
+            ("碰撞老鼠", "CollidingMice"),
             )
 
         self.tabBar = TabBar(tabs, self)
