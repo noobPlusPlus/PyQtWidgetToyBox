@@ -7,7 +7,7 @@ from PyQt5.QtCore import QFile, QIODevice, QDate, Qt
 class NewYearCountDown(QFrame):
     def __init__(self, parent=None):
         super().__init__(parent)
-        loadUi('Welcome/NewYearCountDown/NewYearCountDown.ui', self)
+        loadUi('NewYearCountDown/NewYearCountDown.ui', self)
         self.setAttribute(Qt.WA_DeleteOnClose,True)
 
         yearDayList = [QDate(2022, 2, 1),

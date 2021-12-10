@@ -17,14 +17,12 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
 ## 目录
 
-1. 欢迎(Welcome)/春节倒计时
+1. 欢迎(Welcome)
 
     **练习：**
     + Qt5.14起多个控件支持Markdown
     + 通过loadUi加载ui文件
     + 读取文件
-    + desiner基本使用和修改样式
-    + 控件进入/退出动画(QPropertyAnimation)
 
     **问题：**
     - [ ] 滚动条未写样式
@@ -95,3 +93,13 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     - [x] 代码中使用太多定时器。已解决，封装独立控件，统一调用`advance()`
     
       > Doing the animation with a single timer connection to advance the scene ensures that all the mice are moved at one point and, more importantly, only one update is sent to the screen after all the mice have moved.
+
+8. 春节倒计时[NewYearCountDown](NewYearCountDown/NewYearCountDown.py)
+
+    **练习：**
+    + 通过loadUi加载ui文件
+    + desiner基本使用和修改样式
+    + 控件进入/退出动画(QPropertyAnimation)
+
+    **问题：**
+    + 暂无
