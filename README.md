@@ -21,7 +21,37 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
 ## 目录
 
-1. 欢迎(Welcome)
+1. [TabBar](TabBar/README.md) 
+
+    **练习：**
+    + 自定义信号
+    + QButtonGroup
+    
+    **问题：**
+    - [ ] 暂未添加滚动条
+
+2. ~~[TabPane](TabPane/README.md)~~ 已弃用
+
+    **练习：**
+    + QStackedLayout
+    + 简单工厂模式
+    + python类反射
+
+    **问题：**
+    - [x] 未能通过反射实现简单工厂模式，需要大量的if-else，已解决
+
+3. 懒加载TabPane[LazyTabPane](LazyTabPane/LazyTabPane.py) 
+
+    **练习：**
+    + QStackedLayout
+    + 简单工厂模式
+    + python类反射
+    + python dict使用
+
+    **问题：**
+    - [x] 未能通过反射实现简单工厂模式，需要大量的if-else，已解决
+
+4. 欢迎(Welcome)
 
     **练习：**
     + Qt5.14起多个控件支持Markdown
@@ -32,7 +62,7 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     - [ ] 滚动条未写样式
     - [ ] 字体太小
 
-2. covid 19国内数据总览[Covid19GeneralView](Covid19GeneralView/README.md) 
+5. covid 19国内数据总览[Covid19GeneralView](Covid19GeneralView/README.md) 
 
     **练习：**
 
@@ -45,26 +75,7 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     **问题：**
     + 暂无
 
-3. [TabBar](TabBar/README.md) 
-
-    **练习：**
-    + 自定义信号
-    + QButtonGroup
-    
-    **问题：**
-    - [ ] 暂未添加滚动条
-
-4. [TabPane](TabPane/README.md) 
-
-    **练习：**
-    + QStackedLayout
-    + 简单工厂模式
-    + python类反射
-
-    **问题：**
-    - [x] 未能通过反射实现简单工厂模式，需要大量的if-else，已解决
-
-5. covid 19 普通图表[Covid19GeneralView](Covid19Charts/README.md)
+6. covid 19 普通图表[Covid19GeneralView](Covid19Charts/README.md)
 
     **练习：**
     + QWidget版 WebEngineView
@@ -76,16 +87,16 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     **问题：**
     - [ ] js: Uncaught TypeError: Bind must be called on a function
 
-6. covid 19 地图图表[Covid19Map](Covid19Map/README.md)
+7. covid 19 地图图表[Covid19Map](Covid19Map/README.md)
     **练习：**
     + QWidget版 WebEngineView
     + QWidget版 WebChannel
     + echarts地图图表（参考[gitee-LS1211]("https://gitee.com/LS1211/map-echarts")）
 
     **问题：**
-    - [ ] js: Uncaught TypeError: Bind must be called on a function
+    + 暂无
 
-7. 碰撞老鼠(PySide2 示例)[CollidingMice](CollidingMice/CollidingMice.py)
+8. 碰撞老鼠(PySide2 示例)[CollidingMice](CollidingMice/CollidingMice.py)
     **练习：**
     + 图形视图框架、场景、视图、自定义图形项、坐标系统
     + 动画、碰撞检测
@@ -98,7 +109,7 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     
       > Doing the animation with a single timer connection to advance the scene ensures that all the mice are moved at one point and, more importantly, only one update is sent to the screen after all the mice have moved.
 
-8. 春节倒计时[NewYearCountDown](NewYearCountDown/NewYearCountDown.py)
+9. 春节倒计时[NewYearCountDown](NewYearCountDown/NewYearCountDown.py)
 
     **练习：**
     + 通过loadUi加载ui文件

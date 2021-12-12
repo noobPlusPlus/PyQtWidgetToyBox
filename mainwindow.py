@@ -3,7 +3,7 @@ import sys
 from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFrame, QHBoxLayout
 from TabBar.TabBar import TabBar
-from TabPane.TabPane import TabPane
+from LazyTabPane.LazyTabPane import LazyTabPane
 from NewYearCountDown.NewYearCountDown import NewYearCountDown
 from PyQt5.Qt import QPropertyAnimation, QEasingCurve
 from PyQt5.QtCore import QPoint, QTimer, QRect
@@ -12,7 +12,7 @@ from PyQt5.QtCore import QPoint, QTimer, QRect
 class MainWindow(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
-        tabs = (
+        self.__tabs = (
             ("欢迎", "Welcome"),
             ("Covid19 概览", "Covid19GeneralView"),
             ("Covid19 图表", "Covid19Charts"),
@@ -20,25 +20,29 @@ class MainWindow(QMainWindow):
             ("碰撞老鼠", "CollidingMice"),
             )
 
-        self.tabBar = TabBar(tabs, self)
-        self.tabBar.setMinimumWidth(200)
-        self.tabPane = TabPane(tabs, self)
+        self.__tabBar = TabBar(self.__tabs, self)
+        self.__tabBar.setMinimumWidth(200)
+        self.__tabPane = LazyTabPane(self.__tabs[0][1], self)
 
         mainHLayout = QHBoxLayout()
         mainHLayout.setContentsMargins(0, 0, 0, 0)
         mainHLayout.setSpacing(10)
-        mainHLayout.addWidget(self.tabBar)
-        mainHLayout.addWidget(self.tabPane, 1)
+        mainHLayout.addWidget(self.__tabBar)
+        mainHLayout.addWidget(self.__tabPane, 1)
 
         centralWidget = QFrame(self)
         centralWidget.setLayout(mainHLayout)
         self.setCentralWidget(centralWidget)
-        self.tabBar.changeTab.connect(self.tabPane.setCurrentIndex)
+        self.__tabBar.changeTab.connect(self.__changePage)
         self.setStyleSheet("background:white")
         self.setMinimumSize(1440, 900)
 
         #春节倒计时
         QTimer.singleShot(5000, self.__popupDialog)
+
+    def __changePage(self, index):
+        pageName = self.__tabs[index][1]
+        self.__tabPane.setCurrentPage(pageName)
 
     #春节倒计时进入动画
     def __popupDialog(self):
