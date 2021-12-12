@@ -10,12 +10,21 @@ class Covid19HttpHelper(QtCore.QObject):
         self.__url = "http://c.m.163.com/ug/api/wuhan/app/data/list-total"
         self.__header = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64)"}
 
+    def __openTextData(self):
+        with open("D:/git/PyQtWidgetToyBox/TestData/list_total.json", "r", encoding='UTF-8') as f:
+            return json.load(f)
+
     def getChartsData(self):
-        r = requests.get(self.__url, headers=self.__header)
-        jsonObject = r.json()
+        try:
+            r = requests.get(self.__url, headers=self.__header, timeout=6)
+            return self.__getChartsData(r.json())
+        except Exception:
+            return self.__getChartsData(self.__openTextData())
+
+    def __getChartsData(self, jsonObject):
         msg = jsonObject.get("msg")
         if msg != "成功":
-            return ""
+            raise ValueException("msg error!", msg)
 
         chinaDayList = jsonObject.get("data").get("chinaDayList")
         todayArray = [["date", "确诊", "疑似", "输入"]]
@@ -41,11 +50,16 @@ class Covid19HttpHelper(QtCore.QObject):
         return [json.dumps(todayArray), json.dumps(totalArray), updateTime]
 
     def getMapData(self):
-        r = requests.get(self.__url, headers=self.__header)
-        jsonObject = r.json()
+        try:
+            r = requests.get(self.__url, headers=self.__header, timeout=6)
+            return self.__getMapData(r.json())
+        except Exception:
+            return self.__getMapData(self.__openTextData())
+
+    def __getMapData(self, jsonObject):
         msg = jsonObject.get("msg")
         if msg != "成功":
-            return ""
+            raise ValueException("msg error!", msg)
 
         areaTree = jsonObject.get("data").get("areaTree")
         chinaDailyData = []
@@ -68,11 +82,16 @@ class Covid19HttpHelper(QtCore.QObject):
         return [json.dumps(chinaDailyData), updateTime]
 
     def getGeneralView(self):
-        r = requests.get(self.__url, headers=self.__header)
-        jsonObject = r.json()
+        try:
+            r = requests.get(self.__url, headers=self.__header, timeout=6)
+            return self.__getGeneralView(r.json())
+        except Exception:
+            return self.__getGeneralView(self.__openTextData())
+
+    def __getGeneralView(self, jsonObject):
         msg = jsonObject.get("msg")
         if msg != "成功":
-            return ""
+            raise ValueException("msg error!", msg)
 
         generalViewDatas = []
         totalObject = jsonObject.get("data").get("chinaTotal").get("total")
