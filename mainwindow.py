@@ -48,8 +48,8 @@ class MainWindow(QMainWindow):
         animationEnter.setDuration(2000)
         finishX = (self.width() - self.__newYearCountDown.width()) / 2
         finishY = (self.height() - self.__newYearCountDown.height()) / 2
-        animationEnter.setStartValue(QPoint(finishX, 0))
-        animationEnter.setEndValue(QPoint(finishX, finishY))
+        animationEnter.setStartValue(QPoint(int(finishX), 0))
+        animationEnter.setEndValue(QPoint(int(finishX), int(finishY)))
         animationEnter.setEasingCurve(QEasingCurve.OutBounce)
         animationEnter.start()
 
@@ -61,8 +61,8 @@ class MainWindow(QMainWindow):
         animationLeave.setDuration(2000)
         finishX = (self.width() - self.__newYearCountDown.width()) / 2
         finishY = (self.height() - self.__newYearCountDown.height()) / 2
-        animationLeave.setStartValue(QPoint(finishX, finishY))
-        animationLeave.setEndValue(QPoint(self.width(), finishY))
+        animationLeave.setStartValue(QPoint(int(finishX), int(finishY)))
+        animationLeave.setEndValue(QPoint(self.width(), int(finishY)))
         animationLeave.setEasingCurve(QEasingCurve.InBack)
         animationLeave.start()
 
