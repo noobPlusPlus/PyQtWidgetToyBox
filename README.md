@@ -61,6 +61,7 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     **问题：**
     - [ ] 滚动条未写样式
     - [ ] 字体太小
+![Welcome](ScreenShot/Welcome.jpg)
 
 5. covid 19国内数据总览[Covid19GeneralView](Covid19GeneralView/README.md) 
 
@@ -74,8 +75,9 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
     **问题：**
     + 暂无
+![Welcome](ScreenShot/Covid19GeneralView.jpg)
 
-6. covid 19 普通图表[Covid19GeneralView](Covid19Charts/README.md)
+6. covid 19 普通图表[Covid19Charts](Covid19Charts/README.md)
 
     **练习：**
     + QWidget版 WebEngineView
@@ -86,6 +88,7 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
     **问题：**
     - [ ] js: Uncaught TypeError: Bind must be called on a function
+![Welcome](ScreenShot/Covid19Charts.jpg)
 
 7. covid 19 地图图表[Covid19Map](Covid19Map/README.md)
     **练习：**
@@ -95,6 +98,7 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
     **问题：**
     + 暂无
+![Welcome](ScreenShot/Covid19Map.jpg)
 
 8. 碰撞老鼠(PySide2 示例)[CollidingMice](CollidingMice/CollidingMice.py)
     **练习：**
@@ -108,6 +112,7 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     - [x] 代码中使用太多定时器。已解决，封装独立控件，统一调用`advance()`
     
       > Doing the animation with a single timer connection to advance the scene ensures that all the mice are moved at one point and, more importantly, only one update is sent to the screen after all the mice have moved.
+![Welcome](ScreenShot/CollidingMice.jpg)
 
 9. 春节倒计时[NewYearCountDown](NewYearCountDown/NewYearCountDown.py)
 
@@ -118,3 +123,4 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
     **问题：**
     + 暂无
+![Welcome](ScreenShot/NewYearCountDown.jpg)
