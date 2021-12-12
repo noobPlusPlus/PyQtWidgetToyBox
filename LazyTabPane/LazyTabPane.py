@@ -7,7 +7,7 @@ class LazyTabPane(QFrame):
         super().__init__(parent)
         self.__mainStackedLayout = QStackedLayout(self)
         self.__mainStackedLayout.setContentsMargins(0, 0, 0, 0)
-        self.__pageDict = {};
+        self.__pageDict = {}
         self.__addWidget(firstPageName)  
         self.setLayout(self.__mainStackedLayout)
 
@@ -27,5 +27,5 @@ class LazyTabPane(QFrame):
 
     def __addWidget(self, pageName):
         page = self.__pageFactory(pageName)
-        self.__pageDict[pageName] = self.__mainStackedLayout.count();
+        self.__pageDict[pageName] = self.__mainStackedLayout.count()
         self.__mainStackedLayout.addWidget(page)   
