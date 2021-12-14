@@ -1,9 +1,11 @@
 # PySideToyBox
 
-#### 介绍
+## 介绍
+
 c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
-#### 个人网站
+## 个人网站
+
 [github page](https://noobplusplus.github.io/)
 [gitee page](https://yuque.gitee.io/noob/)
 
@@ -21,14 +23,14 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
 ## 目录
 
-1. [TabBar](TabBar/README.md) 
+1. [TabBar](TabBar/README.md)
 
     **练习：**
     + 自定义信号
     + QButtonGroup
-    
+
     **问题：**
-    - [ ] 暂未添加滚动条
+    + [ ] 暂未添加滚动条
 
 2. ~~[TabPane](TabPane/README.md)~~ 已弃用
 
@@ -38,9 +40,9 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     + python类反射
 
     **问题：**
-    - [x] 未能通过反射实现简单工厂模式，需要大量的if-else，已解决
+    + [x] 未能通过反射实现简单工厂模式，需要大量的if-else，已解决
 
-3. 懒加载TabPane[LazyTabPane](LazyTabPane/LazyTabPane.py) 
+3. 懒加载TabPane[LazyTabPane](LazyTabPane/LazyTabPane.py)
 
     **练习：**
     + QStackedLayout
@@ -49,7 +51,7 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     + python dict使用
 
     **问题：**
-    - [x] 未能通过反射实现简单工厂模式，需要大量的if-else，已解决
+    + [x] 未能通过反射实现简单工厂模式，需要大量的if-else，已解决
 
 4. 欢迎(Welcome)
 
@@ -59,11 +61,12 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     + 读取文件
 
     **问题：**
-    - [ ] 滚动条未写样式
-    - [ ] 字体太小
-![Welcome](ScreenShot/Welcome.jpg)
+    + [ ] 滚动条未写样式
+    + [ ] 字体太小
 
-5. covid 19国内数据总览[Covid19GeneralView](Covid19GeneralView/README.md) 
+    ![Welcome](ScreenShot/Welcome.jpg)
+
+5. covid 19国内数据总览[Covid19GeneralView](Covid19GeneralView/README.md)
 
     **练习：**
 
@@ -75,7 +78,8 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
     **问题：**
     + 暂无
-![Welcome](ScreenShot/Covid19GeneralView.jpg)
+
+    ![Welcome](ScreenShot/Covid19GeneralView.jpg)
 
 6. covid 19 普通图表[Covid19Charts](Covid19Charts/README.md)
 
@@ -87,10 +91,12 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     + 自定义信号槽@pyqtSlot()
 
     **问题：**
-    - [ ] js: Uncaught TypeError: Bind must be called on a function
-![Welcome](ScreenShot/Covid19Charts.jpg)
+    + [ ] js: Uncaught TypeError: Bind must be called on a function
+
+    ![Welcome](ScreenShot/Covid19Charts.jpg)
 
 7. covid 19 地图图表[Covid19Map](Covid19Map/README.md)
+
     **练习：**
     + QWidget版 WebEngineView
     + QWidget版 WebChannel
@@ -98,21 +104,24 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
     **问题：**
     + 暂无
-![Welcome](ScreenShot/Covid19Map.jpg)
+
+    ![Welcome](ScreenShot/Covid19Map.jpg)
 
 8. 碰撞老鼠(PySide2 示例)[CollidingMice](CollidingMice/CollidingMice.py)
+
     **练习：**
     + 图形视图框架、场景、视图、自定义图形项、坐标系统
     + 动画、碰撞检测
     + QPainter绘图
 
     **问题：**
-    - [x] 老鼠很短时间就会移出屏幕。已解决，根据C++版本修改`Rotation`相关处理
-    
-    - [x] 代码中使用太多定时器。已解决，封装独立控件，统一调用`advance()`
-    
+    + [x] 老鼠很短时间就会移出屏幕。已解决，根据C++版本修改`Rotation`相关处理
+
+    + [x] 代码中使用太多定时器。已解决，封装独立控件，统一调用`advance()`
+
       > Doing the animation with a single timer connection to advance the scene ensures that all the mice are moved at one point and, more importantly, only one update is sent to the screen after all the mice have moved.
-![Welcome](ScreenShot/CollidingMice.jpg)
+
+    ![Welcome](ScreenShot/CollidingMice.jpg)
 
 9. 春节倒计时[NewYearCountDown](NewYearCountDown/NewYearCountDown.py)
 
@@ -123,4 +132,5 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
 
     **问题：**
     + 暂无
-![Welcome](ScreenShot/NewYearCountDown.jpg)
+
+    ![Welcome](ScreenShot/NewYearCountDown.jpg)
