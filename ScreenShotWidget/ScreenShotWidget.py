@@ -12,9 +12,9 @@ class ScreenShotWidget(QFrame):
         mainVLayout.addWidget(pushButton, 0, alignment=Qt.AlignHCenter | Qt.AlignVCenter)
         self.setLayout(mainVLayout)
 
-        QProcess.startDetached("\"Snip aste/Snipaste.exe\"")
+        QProcess.startDetached("\"Snipaste/Snipaste.exe\"")
         pushButton.clicked.connect(self.__onScreenShot)
 
     def __onScreenShot(self):
-        QProcess.startDetached("\"Snip aste/Snipaste.exe\"" + " snip")
+        QProcess.startDetached("\"Snipaste/Snipaste.exe\"" + " snip")
 
