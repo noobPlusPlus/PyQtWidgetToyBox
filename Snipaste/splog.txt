@@ -1,0 +1,187 @@
+[2022-01-03 17:24:27.416] [I] ***************************************************************
+[2022-01-03 17:24:27.419] [I] Snipaste 2.7.1-Beta x64 (Desktop) (Qt 5.12.6)
+[2022-01-03 17:24:27.419] [I] OS: Windows 10 (10.0) [10.0.19043]
+[2022-01-03 17:24:27.419] [I] Cores: 8
+[2022-01-03 17:24:27.419] [I] Elevated: false
+[2022-01-03 17:24:27.419] [I] Main thread id: 0x38d0
+[2022-01-03 17:24:27.419] [I] Log level: 2
+[2022-01-03 17:24:27.419] [I] Application dir: D:/git/mygithub/PyQtWidgetToyBox/Snipaste
+[2022-01-03 17:24:27.419] [I] Working dir: D:/git/mygithub/PyQtWidgetToyBox
+[2022-01-03 17:24:27.419] [I] Config: D:/git/mygithub/PyQtWidgetToyBox/Snipaste/config.ini
+[2022-01-03 17:24:27.419] [I] Library paths: (D:/git/mygithub/PyQtWidgetToyBox/Snipaste)
+[2022-01-03 17:24:27.419] [I] Screen scale: 1.25
+[2022-01-03 17:24:27.419] [I] Retina factor: 1
+[2022-01-03 17:24:27.420] [I] Screens: 1
+[2022-01-03 17:24:27.420] [I]     QRect(0, 0, 1920 x 1080), DPI = 120 , DPR = 1
+[2022-01-03 17:24:27.445] [I] Desktops: 2
+[2022-01-03 17:24:27.445] [I] OpenGL support: false
+[2022-01-03 17:24:27.468] [I] About to import settings from: D:/git/mygithub/PyQtWidgetToyBox/Snipaste/config.ini
+[2022-01-03 17:24:27.477] [I] Settings imported
+[2022-01-03 17:24:27.481] [I] Breakpad initialized
+[2022-01-03 17:24:27.486] [I] Process priority: 1
+[2022-01-03 17:24:27.486] [I] Initializing Snipaste...
+[2022-01-03 17:24:28.070] [I] Prefetch...
+[2022-01-03 17:24:28.086] [I] Preloaded 20 files: 15 ms
+[2022-01-03 17:24:28.105] [I] About to apply settings...
+[2022-01-03 17:24:28.117] [I] Load default ssl configuration: 47 ms
+[2022-01-03 17:24:28.172] [I] Settings applied
+[2022-01-03 17:24:28.188] [I] Log level set to: 2
+[2022-01-03 17:24:28.230] [I] History dir: D:/git/mygithub/PyQtWidgetToyBox/Snipaste/history
+[2022-01-03 17:24:28.231] [W] Failed to open history file "D:/git/mygithub/PyQtWidgetToyBox/Snipaste/history/.sp0" for reading
+[2022-01-03 17:24:28.231] [I] Add group
+[2022-01-03 17:24:28.236] [I] Request to switch to group 0
+[2022-01-03 17:24:28.316] [I] About to restore pasters...
+[2022-01-03 17:24:28.316] [I] Group 0 [JTVIHY]: "默认"
+[2022-01-03 17:24:28.316] [I] Record version: 193
+[2022-01-03 17:24:28.316] [I] To restore: 0
+[2022-01-03 17:24:28.316] [I] Pasters touched
+[2022-01-03 17:24:28.316] [I] All pasters activated: true
+[2022-01-03 17:24:28.345] [I] Unref images: 0 (0 removed)
+[2022-01-03 17:24:28.346] [I] Unref dirs: 0 (0 removed)
+[2022-01-03 17:24:28.348] [I] Empty history info files: 0 (0 removed)
+[2022-01-03 17:24:28.348] [I] Pasters restored
+[2022-01-03 17:24:28.349] [I] Launch time: 932 ms
+[2022-01-03 17:24:33.893] [I] Second instance: 2
+[2022-01-03 17:24:33.893] [I] Parsing command arguments [3]: (Snipaste\Snipaste.exe, snip)
+[2022-01-03 17:24:33.894] [I] Snip request: 0 (dest: 0)
+[2022-01-03 17:24:33.894] [I] Snipper: preparing...
+[2022-01-03 17:24:33.894] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2022-01-03 17:24:33.945] [I] Background size: QSize(1920, 1080)
+[2022-01-03 17:24:33.945] [I] Screens: 1
+[2022-01-03 17:24:33.945] [I]     QRect(0, 0, 1920 x 1080), DPI = 120 , DPR = 1
+[2022-01-03 17:24:33.955] [I] Focus set
+[2022-01-03 17:24:33.957] [I] Snipper: preparation done (0)
+[2022-01-03 17:24:33.958] [I] Snipper: about to appear...
+[2022-01-03 17:24:33.958] [I] Snipper: prepare to show...
+[2022-01-03 17:24:33.964] [I] Snipper: shown
+[2022-01-03 17:24:33.983] [I] Snipper: focus in
+[2022-01-03 17:24:33.983] [I] Snipper: ready [0.089 s]
+[2022-01-03 17:24:34.122] [W] QWindowsWindow::setGeometry: Unable to set geometry 179x215+283+276 (frame: 179x215+283+276) on QWidgetWindow/"magnifierWindow" on "\\.\DISPLAY1". Resulting geometry: 179x221+283+276 (frame: 179x221+283+276) margins: 0, 0, 0, 0 minimum size: 179x215 maximum size: 179x16777215 MINMAXINFO maxSize=0,0 maxpos=0,0 mintrack=179,215 maxtrack=179,0)
+[2022-01-03 17:24:36.256] [I] Screenshot (218, 74, 1322 x 722) destination: none
+[2022-01-03 17:24:36.256] [I] Snipper: about to quit...
+[2022-01-03 17:24:36.260] [I] Snipper: focus out [3] (Foreground window: Snipper - Snipaste)
+[2022-01-03 17:24:36.268] [I] Snipper: hidden
+[2022-01-03 17:24:36.269] [I] Snipper: quit
+[2022-01-03 17:24:37.719] [I] Second instance: 2
+[2022-01-03 17:24:37.719] [I] Parsing command arguments [3]: (Snipaste\Snipaste.exe, snip)
+[2022-01-03 17:24:37.720] [I] Snip request: 0 (dest: 0)
+[2022-01-03 17:24:37.720] [I] Snipper: preparing...
+[2022-01-03 17:24:37.720] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2022-01-03 17:24:37.765] [I] Background size: QSize(1920, 1080)
+[2022-01-03 17:24:37.765] [I] Screens: 1
+[2022-01-03 17:24:37.765] [I]     QRect(0, 0, 1920 x 1080), DPI = 120 , DPR = 1
+[2022-01-03 17:24:37.774] [I] Focus set
+[2022-01-03 17:24:37.775] [I] Snipper: preparation done (0)
+[2022-01-03 17:24:37.777] [I] Snipper: about to appear...
+[2022-01-03 17:24:37.777] [I] Snipper: prepare to show...
+[2022-01-03 17:24:37.781] [I] Snipper: shown
+[2022-01-03 17:24:37.804] [I] Snipper: focus in
+[2022-01-03 17:24:37.804] [I] Snipper: ready [0.084 s]
+[2022-01-03 17:24:39.511] [I] Screenshot (475, 206, 801 x 482) destination: none
+[2022-01-03 17:24:39.511] [I] Snipper: about to quit...
+[2022-01-03 17:24:39.515] [I] Snipper: focus out [3] (Foreground window: Snipper - Snipaste)
+[2022-01-03 17:24:39.524] [I] Snipper: hidden
+[2022-01-03 17:24:39.526] [I] Snipper: quit
+[2022-01-03 17:26:41.503] [I] ***************************************************************
+[2022-01-03 17:26:41.504] [I] Snipaste 2.7.1-Beta x64 (Desktop) (Qt 5.12.6)
+[2022-01-03 17:26:41.504] [I] OS: Windows 10 (10.0) [10.0.19043]
+[2022-01-03 17:26:41.504] [I] Cores: 8
+[2022-01-03 17:26:41.504] [I] Elevated: false
+[2022-01-03 17:26:41.504] [I] Main thread id: 0x3604
+[2022-01-03 17:26:41.504] [I] Log level: 2
+[2022-01-03 17:26:41.504] [I] Application dir: D:/git/mygithub/PyQtWidgetToyBox/Snipaste
+[2022-01-03 17:26:41.504] [I] Working dir: D:/git/mygithub/PyQtWidgetToyBox
+[2022-01-03 17:26:41.504] [I] Config: D:/git/mygithub/PyQtWidgetToyBox/Snipaste/config.ini
+[2022-01-03 17:26:41.504] [I] Library paths: (D:/git/mygithub/PyQtWidgetToyBox/Snipaste)
+[2022-01-03 17:26:41.504] [I] Screen scale: 1.25
+[2022-01-03 17:26:41.504] [I] Retina factor: 1
+[2022-01-03 17:26:41.505] [I] Screens: 1
+[2022-01-03 17:26:41.505] [I]     QRect(0, 0, 1920 x 1080), DPI = 120 , DPR = 1
+[2022-01-03 17:26:41.526] [I] Desktops: 2
+[2022-01-03 17:26:41.526] [I] OpenGL support: false
+[2022-01-03 17:26:41.546] [I] About to import settings from: D:/git/mygithub/PyQtWidgetToyBox/Snipaste/config.ini
+[2022-01-03 17:26:41.571] [I] Settings imported
+[2022-01-03 17:26:41.573] [I] Breakpad initialized
+[2022-01-03 17:26:41.575] [I] Process priority: 1
+[2022-01-03 17:26:41.575] [I] Initializing Snipaste...
+[2022-01-03 17:26:42.033] [I] Prefetch...
+[2022-01-03 17:26:42.046] [I] Preloaded 20 files: 12 ms
+[2022-01-03 17:26:42.055] [I] About to apply settings...
+[2022-01-03 17:26:42.066] [I] Load default ssl configuration: 32 ms
+[2022-01-03 17:26:42.105] [I] Settings applied
+[2022-01-03 17:26:42.117] [I] Log level set to: 2
+[2022-01-03 17:26:42.148] [I] History dir: D:/git/mygithub/PyQtWidgetToyBox/Snipaste/history
+[2022-01-03 17:26:42.149] [I] Header version: 193
+[2022-01-03 17:26:42.149] [I] About to restore pasters...
+[2022-01-03 17:26:42.149] [I] Group 0 [JTVIHY]: "默认"
+[2022-01-03 17:26:42.149] [I] Record version: 193
+[2022-01-03 17:26:42.149] [I] To restore: 0
+[2022-01-03 17:26:42.149] [I] Pasters touched
+[2022-01-03 17:26:42.149] [I] All pasters activated: true
+[2022-01-03 17:26:42.239] [I] Unref images: 0 (0 removed)
+[2022-01-03 17:26:42.240] [I] Unref dirs: 0 (0 removed)
+[2022-01-03 17:26:42.241] [I] Empty history info files: 0 (0 removed)
+[2022-01-03 17:26:42.241] [I] Pasters restored
+[2022-01-03 17:26:42.241] [I] Launch time: 738 ms
+[2022-01-03 17:28:41.581] [I] ***************************************************************
+[2022-01-03 17:28:41.583] [I] Snipaste 2.7.1-Beta x64 (Desktop) (Qt 5.12.6)
+[2022-01-03 17:28:41.583] [I] OS: Windows 10 (10.0) [10.0.19043]
+[2022-01-03 17:28:41.583] [I] Cores: 8
+[2022-01-03 17:28:41.583] [I] Elevated: false
+[2022-01-03 17:28:41.583] [I] Main thread id: 0x2548
+[2022-01-03 17:28:41.583] [I] Log level: 2
+[2022-01-03 17:28:41.583] [I] Application dir: D:/git/mygithub/PyQtWidgetToyBox/Snipaste
+[2022-01-03 17:28:41.583] [I] Working dir: D:/git/mygithub/PyQtWidgetToyBox
+[2022-01-03 17:28:41.583] [I] Config: D:/git/mygithub/PyQtWidgetToyBox/Snipaste/config.ini
+[2022-01-03 17:28:41.583] [I] Library paths: (D:/git/mygithub/PyQtWidgetToyBox/Snipaste)
+[2022-01-03 17:28:41.583] [I] Screen scale: 1.25
+[2022-01-03 17:28:41.583] [I] Retina factor: 1
+[2022-01-03 17:28:41.583] [I] Screens: 1
+[2022-01-03 17:28:41.583] [I]     QRect(0, 0, 1920 x 1080), DPI = 120 , DPR = 1
+[2022-01-03 17:28:41.603] [I] Desktops: 2
+[2022-01-03 17:28:41.603] [I] OpenGL support: false
+[2022-01-03 17:28:41.627] [I] About to import settings from: D:/git/mygithub/PyQtWidgetToyBox/Snipaste/config.ini
+[2022-01-03 17:28:41.652] [I] Settings imported
+[2022-01-03 17:28:41.655] [I] Breakpad initialized
+[2022-01-03 17:28:41.658] [I] Process priority: 1
+[2022-01-03 17:28:41.658] [I] Initializing Snipaste...
+[2022-01-03 17:28:42.168] [I] Prefetch...
+[2022-01-03 17:28:42.181] [I] Preloaded 20 files: 13 ms
+[2022-01-03 17:28:42.198] [I] About to apply settings...
+[2022-01-03 17:28:42.199] [I] Load default ssl configuration: 30 ms
+[2022-01-03 17:28:42.257] [I] Settings applied
+[2022-01-03 17:28:42.271] [I] Log level set to: 2
+[2022-01-03 17:28:42.316] [I] History dir: D:/git/mygithub/PyQtWidgetToyBox/Snipaste/history
+[2022-01-03 17:28:42.317] [I] Header version: 193
+[2022-01-03 17:28:42.317] [I] About to restore pasters...
+[2022-01-03 17:28:42.318] [I] Group 0 [JTVIHY]: "默认"
+[2022-01-03 17:28:42.318] [I] Record version: 193
+[2022-01-03 17:28:42.318] [I] To restore: 0
+[2022-01-03 17:28:42.318] [I] Pasters touched
+[2022-01-03 17:28:42.318] [I] All pasters activated: true
+[2022-01-03 17:28:42.415] [I] Unref images: 0 (0 removed)
+[2022-01-03 17:28:42.415] [I] Unref dirs: 0 (0 removed)
+[2022-01-03 17:28:42.416] [I] Empty history info files: 0 (0 removed)
+[2022-01-03 17:28:42.416] [I] Pasters restored
+[2022-01-03 17:28:42.417] [I] Launch time: 836 ms
+[2022-01-03 17:28:46.130] [I] Second instance: 2
+[2022-01-03 17:28:46.130] [I] Parsing command arguments [3]: (Snipaste\Snipaste.exe, snip)
+[2022-01-03 17:28:46.131] [I] Snip request: 0 (dest: 0)
+[2022-01-03 17:28:46.131] [I] Snipper: preparing...
+[2022-01-03 17:28:46.131] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2022-01-03 17:28:46.174] [I] Background size: QSize(1920, 1080)
+[2022-01-03 17:28:46.174] [I] Screens: 1
+[2022-01-03 17:28:46.174] [I]     QRect(0, 0, 1920 x 1080), DPI = 120 , DPR = 1
+[2022-01-03 17:28:46.182] [I] Focus set
+[2022-01-03 17:28:46.185] [I] Snipper: preparation done (0)
+[2022-01-03 17:28:46.185] [I] Snipper: about to appear...
+[2022-01-03 17:28:46.185] [I] Snipper: prepare to show...
+[2022-01-03 17:28:46.193] [I] Snipper: shown
+[2022-01-03 17:28:46.214] [I] Snipper: focus in
+[2022-01-03 17:28:46.214] [I] Snipper: ready [0.083 s]
+[2022-01-03 17:28:46.346] [W] QWindowsWindow::setGeometry: Unable to set geometry 179x215+466+234 (frame: 179x215+466+234) on QWidgetWindow/"magnifierWindow" on "\\.\DISPLAY1". Resulting geometry: 179x221+466+234 (frame: 179x221+466+234) margins: 0, 0, 0, 0 minimum size: 179x215 maximum size: 179x16777215 MINMAXINFO maxSize=0,0 maxpos=0,0 mintrack=179,215 maxtrack=179,0)
+[2022-01-03 17:28:47.689] [I] Screenshot (456, 209, 934 x 416) destination: none
+[2022-01-03 17:28:47.689] [I] Snipper: about to quit...
+[2022-01-03 17:28:47.694] [I] Snipper: focus out [3] (Foreground window: Snipper - Snipaste)
+[2022-01-03 17:28:47.703] [I] Snipper: hidden
+[2022-01-03 17:28:47.704] [I] Snipper: quit

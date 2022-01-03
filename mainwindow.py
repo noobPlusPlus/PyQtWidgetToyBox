@@ -18,6 +18,7 @@ class MainWindow(QMainWindow):
             ("Covid19 图表", "Covid19Charts"),
             ("Covid19 地图", "Covid19Map"),
             ("碰撞老鼠", "CollidingMice"),
+            ("截图", "ScreenShotWidget"),
             )
 
         self.__tabBar = TabBar(self.__tabs, self)

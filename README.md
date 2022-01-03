@@ -134,3 +134,11 @@ c++/QWidget菜鸟学习PyQt/QWidget写的小玩具。
     + 暂无
 
     ![Welcome](ScreenShot/NewYearCountDown.jpg)
+
+10. 截图[ScreenShotWidget](ScreenShotWidget/ScreenShotWidget.py，调用第三方截图软件Snipaste，侵删)
+
+    **练习：**
+    + 通过`QProcess`启动外部程序
+
+    **问题：**
+    + 暂无
